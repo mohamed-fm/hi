@@ -1,19 +1,19 @@
 backend:
-name: git-gateway
-branch: main
+  name: git-gateway
+  branch: main
 media_folder: "/public/assets/blog"
 public_folder: "/assets/blog"
 collections:
-  name: "blog" # Used in routes, e.g., /admin/collections/blog
-  label: "Blog" # Used in the UI
-  folder: "src/blog" # The path to the folder where the documents are stored
-  create: true # Allow users to create new documents in this collection
-  slug: "{{day}}-{{month}}-{{year}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  fields: # The fields for each document, usually in front matter
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Author", name: "author", widget: "string"}
-    - {label: "date", name: "date", widget: "datetime"}
-    - {label: "image", name: "image", widget: "image"}
-    - {label: "imggeAlt", name: "imageAlt", widget: "string"}
-    - {label: "description", name: "description", widget: "string"}
-    - {label: "body", name: "body", widget: "markdown"}
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "src/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{day}}-{{month}}-{{year}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "date", name: "date", widget: "datetime"}
+      - {label: "image", name: "image", widget: "image"}
+      - {label: "imggeAlt", name: "imageAlt", widget: "string"}
+      - {label: "description", name: "description", widget: "string"}
+      - {label: "body", name: "body", widget: "markdown"}

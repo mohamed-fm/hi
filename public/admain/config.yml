@@ -13,7 +13,6 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Author", name: "author", widget: "string"}
     - {label: "date", name: "date", widget: "datetime"}
-    - {label: "tags", name: "tags", widget: "list", default:["post"]}
     - {label: "image", name: "image", widget: "image"}
     - {label: "imggeAlt", name: "imageAlt", widget: "string"}
     - {label: "description", name: "description", widget: "string"}
